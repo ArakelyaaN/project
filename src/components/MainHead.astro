@@ -1,0 +1,22 @@
+---
+import '../styles/global.css';
+const {
+	title = 'Gor ArakelyaN: Personal Site',
+	description = 'The personal site of Gor ArakelyaN',
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>Partfolio</title>
+
+
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap"
+	rel="stylesheet"
+/>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+</style>

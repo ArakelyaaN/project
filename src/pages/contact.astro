@@ -1,0 +1,201 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+<html lang="en">
+	<head>
+		<MainHead title="Contact with me | Gor ArakeyaN" description="AboutGor ArakelyaN Lorem Ipsum" />
+		<style>
+			
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+
+.insta {
+ cursor: pointer;
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-family: 'Montserrat', sans-serif;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+.insta::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+.insta:hover {
+ color: #e8e8e8;
+}
+
+.insta:hover::before {
+ width: 100%;
+}
+
+.mail {
+ cursor: pointer;
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-family: 'Montserrat', sans-serif;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+.mail::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+.mail:hover {
+ color: #e8e8e8;
+}
+
+.mail:hover::before {
+ width: 100%;
+}
+
+.git {
+ cursor: pointer;
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-family: 'Montserrat', sans-serif;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+.git::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+.git:hover {
+ color: #e8e8e8;
+}
+
+.git:hover::before {
+ width: 100%;
+}
+
+.mailLink{
+	font-family:'Montserrat', sans-serif; 
+	text-decoration: none;
+	color: rgb(255, 202, 28);
+}
+
+.instaLink{
+	font-family:'Montserrat', sans-serif; 
+	text-decoration: none;
+	color: rgb(255, 202, 28);
+}
+
+.gitLink{
+	font-family:'Montserrat', sans-serif; 
+	text-decoration: none;
+	color: rgb(255, 202, 28);
+}
+			
+	</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Gor</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="/assets/cb5b297f5c0e71570239aa3506aa38cd.jpg"
+				/>
+			</div>
+			<div class="bio wrapper">
+	<button class="mail">
+		<a href="mailto:g.araqyan12@gmail.com" class="mailLink">
+			My Mail
+		</a></button>
+     
+		<button class="insta">
+			<a href="https://www.instagram.com/thegorkang/" class="instaLink">
+				My instagram
+			</a></button>
+	
+			<button class="git">
+				<a href="https://github.com/ArakelyaaN" class="gitLink">
+					My Github
+				</a></button>
+	
+
+			</div>
+		</div>
+		<Footer />
+		<script>
+			// const Mailbtn = function(){
+				// window.open('<a href="https://www.instagram.com/thegorkang/" ></a>')
+			// }
+		</script>
+	</body>
+</html>
