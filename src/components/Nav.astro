@@ -10,11 +10,13 @@
 			
 </nav>
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
 	nav {
 		display: flex;
 		gap: 1rem;
 		align-items: center;
 		padding: 1rem;
+		background-color:#222831; ; 
 	}
 
 	.link {
@@ -29,7 +31,7 @@
 
 	.link:hover,
 	.link:focus {
-		color: var(--t-active);
+		color: var(--c-yellow);
 	}
 
 	.monogram {
@@ -39,11 +41,16 @@
 		width: 2em;
 		height: 2em;
 		margin-right: 0.5rem;
-		color: var(--c-black);
+		color: var(--c-white);
 		font-weight: 900;
 		letter-spacing: -0.125rem;
 		border: 3px solid currentColor;
 		border-radius: 50%;
+		font-family:'Montserrat', sans-serif; ;
+	}
+
+	.monogram:hover{
+		color: var(--c-white);
 	}
 
 	.socials {
